@@ -1,0 +1,283 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+	/* COLORS */
+	--darkRed: #6f2232;
+	--red: #c3073f;
+	--pink: #950740;
+	--black: #1a1a1d;
+	--gray: #4e4e50;
+	--white: #ffffff;
+
+	/* COLORS INTENTIONS */
+	--primary: var(--pink);
+	--danger: var(--darkRed);
+	--background: var(--black);
+	--textColor: var(--white);
+	--reverseTextColor: var(--black);
+	--lineColor: var(--red);
+	--cardBG: var(--gray);
+	--headerBG: var(--black);
+	--headerLinkText: var(--white);
+	--btnTextColor: var(--gray);
+	--btnBGColor: var(--pink);
+	--footerBG: var(--black);
+	--headerLinkOpacity: var(--gray);
+	--headerBorder: var(--red);
+	--inputBorder: var(--pink);
+
+	/* STYLES */
+	--line: 1px solid var(--lineColor);
+
+	/* TYPE */
+	--headingFont: 'Lora', serif;
+	--bodyFont: 'Space Mono', monospace;
+	--slantText: 'Calligraffitti', cursive;
+	--baseFontSize: 100%;
+	/* SIZING FOR NON DEFAULT STYLING */
+	--h1: 4.209em;
+	--h2: 3.157em;
+	--h3: 2.369em;
+	--h4: 1.777em;
+	--h5: 1.333em;
+	--smallTextSize: 0.75em;
+
+	/* ELEVATION LEVELS */
+	--level1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	--level2: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	--level3: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+	--level4: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+	/* POSITIONING */
+	--containerPadding: 2.5%;
+	--headerHeight: 4rem;
+	--borderRadius: 10px;
+}
+
+/* FROM TYPE-SCALE */
+html {
+	font-size: var(--baseFontSize);
+	box-sizing: border-box;
+} /*18px Desktop*/
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: var(--bodyFont);
+	font-weight: 400;
+	line-height: 1.65;
+	background: var(--background);
+	color: var(--textColor);
+}
+
+header {
+	--headerHeight: min-content;
+	color: white;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: var(--headerHeight);
+	background: var(--headerBG);
+	box-shadow: var(--level2);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 var(--containerPadding);
+	z-index: 5;
+}
+@media (min-width: 460px) {
+	header {
+		--headerHeight: 4rem;
+		height: var(--headerHeight);
+		flex-direction: row;
+		align-items: center;
+	}
+}
+@media (min-width: 500px) {
+	header {
+		--headerHeight: 4rem;
+		height: var(--headerHeight);
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+header nav a {
+	color: var(--headerLinkText);
+	text-decoration: none;
+}
+
+/* handles spacing of nav items */
+header nav a + a {
+	margin-left: 20px;
+}
+
+footer {
+	--footerTextColor: var(--white);
+	color: var(--footerTextColor);
+	background: var(--footerBG);
+	padding: 2rem var(--containerPadding);
+	text-align: center;
+}
+
+footer a {
+	color: var(--footerTextColor);
+}
+
+footer p {
+	margin-bottom: 0;
+	max-width: none;
+}
+
+p {
+	margin-bottom: 1.15rem;
+	max-width: 40em;
+}
+
+p a,
+blockquote a {
+	color: var(--textColor);
+	text-decoration: none;
+	border-bottom: solid 2px var(--primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 2.75rem 0 1.05rem;
+	font-family: var(--headingFont);
+	font-weight: 400;
+	line-height: 1.15;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: var(--h1);
+}
+
+h2 {
+	font-size: var(--h2);
+}
+
+h3 {
+	font-size: var(--h3);
+}
+
+h4 {
+	font-size: var(--h4);
+}
+
+h5 {
+	font-size: var(--h5);
+}
+
+small,
+.text_small {
+	font-size: var(--smallTextSize);
+}
+
+/* END TYPE-SCALE */
+
+blockquote {
+	/* border: solid 1px var(--darkBlue); */
+	margin: 10px;
+	padding: 2em;
+	background: var(--cardBG);
+	box-shadow: var(--level3);
+}
+
+label {
+	display: block;
+	font-size: var(--smallTextSize);
+}
+
+input,
+textarea {
+	padding: 4px 5px;
+	border: 1px solid var(--inputBorder);
+	border-radius: 4px;
+}
+
+textarea {
+	width: 100%;
+	height: 10rem;
+}
+
+::placeholder {
+	color: var(--gray);
+}
+
+select {
+	border: var(--line);
+}
+
+hr {
+	border-top: var(--line);
+}
+
+button {
+	appearance: none;
+	color: var(--btnTextColor);
+	background: var(--btnBGColor);
+	border: none;
+	border-radius: 10px;
+	padding: 5px 25px;
+	cursor: pointer;
+	box-shadow: var(--level1);
+	transition: 0.3s ease-out box-shadow;
+	font-weight: bold;
+}
+
+button:hover {
+	box-shadow: var(--level2);
+}
+@media (hover: hover) and (pointer: fine) {
+	button:hover {
+		box-shadow: var(--level2);
+	}
+}
+
+button[disabled] {
+	opacity: 0.4;
+}
+
+button.small {
+	font-size: var(--smallTextSize);
+}
+
+.layout {
+	padding: calc(3rem + var(--headerHeight)) 0;
+	padding-bottom: 0;
+}
+
+@media only screen and (min-width: 500px) {
+	:root {
+		--baseFontSize: 112.5%;
+	}
+}
+
+.card {
+	padding: 2em;
+	background: var(--cardBG);
+	box-shadow: var(--level3);
+	border-radius: var(--borderRadius);
+}
+
+/* first item will never have margin top */
+.card > *:first-child {
+	margin-top: 0;
+}
+
+/* last item will never have margin bottom */
+.card > *:last-child {
+	margin-bottom: 0;
+}
