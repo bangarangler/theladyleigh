@@ -185,6 +185,18 @@
 		width: 90%;
 		margin: 0 auto;
 	}
+	@media (min-width: 600px) {
+		.bodyText {
+			width: 80%;
+			max-width: 80%;
+		}
+	}
+	@media (min-width: 900px) {
+		.bodyText {
+			width: 50%;
+			max-width: 50%;
+		}
+	}
 	.pic {
 		max-width: 300px;
 		margin: 30px auto;
@@ -198,6 +210,26 @@
 		justify-content: space-between;
 		width: 90%;
 		margin: 20px auto;
+	}
+	@media (min-width: 600px) {
+		.iconWrap {
+			width: 80%;
+			max-width: 80%;
+		}
+	}
+	@media (min-width: 900px) {
+		.iconWrap {
+			width: 50%;
+			max-width: 50%;
+		}
+	}
+	p {
+		text-align: justify;
+	}
+	@media (min-width: 900px) {
+		p {
+			text-align: center;
+		}
 	}
 	.icons {
 		max-width: 50px;
