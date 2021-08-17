@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import NavBar from '$components/NavBar/NavBar.svelte';
-	/* import Footer from '$components/Footer/Footer.svelte'; */
+	import Footer from '$components/Footer/Footer.svelte';
 	/* import { browser } from '$app/env'; */
 	$: path = $page.path.replace('/', '');
 	$: title = path !== '' ? path : 'home';
@@ -51,7 +51,8 @@
 
 <div class="fancyDivide" />
 
-<!--<Footer />-->
+<Footer />
+
 <style>
 	.fancyDivide {
 		width: 100%;
