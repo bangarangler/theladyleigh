@@ -57,6 +57,7 @@
 	.fancyDivide {
 		width: 100%;
 		height: 3px;
-		background: linear-gradient(to left, var(--pink), var(--red));
+		/* background: linear-gradient(to left, var(--green), var(--pink)); */
+		background: var(--blue);
 	}
 </style>

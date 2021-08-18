@@ -136,7 +136,8 @@
 		margin-top: 100px;
 	}
 	h1 {
-		background: linear-gradient(271deg, var(--pink) 30%, 50%, var(--red) 70%, var(--darkRed) 94%);
+		/* background: linear-gradient(271deg, var(--blue) 30%, 50%, var(--green) 70%, #966fd6 94%); */
+		background: linear-gradient(271deg, var(--green) 20% 40%, var(--blue) 60% 70%, #966fd6 80% 90%);
 		background-clip: border-box;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -149,7 +150,7 @@
 		}
 	}
 	h2 {
-		color: var(--red);
+		color: var(--green);
 		font-size: var(--h3);
 		text-align: center;
 	}
@@ -161,7 +162,7 @@
 		margin: 0 auto;
 	}
 	button {
-		background: var(--red);
+		background: var(--darkBlue);
 		border-radius: 12px;
 		margin: 25px auto;
 		color: var(--white);
@@ -173,11 +174,11 @@
 		place-items: center;
 		margin-bottom: 20px;
 	}
-	@media (min-width: 800px) {
-		.headingWrap {
-			/* grid-template-columns: repeat(2, minmax(1px, 1fr)); */
-		}
-	}
+	/* @media (min-width: 800px) { */
+	/* 	.headingWrap { */
+	/* grid-template-columns: repeat(2, minmax(1px, 1fr)); */
+	/* 	} */
+	/* } */
 	.headingImgWrap {
 		max-width: 300px;
 	}
@@ -200,7 +201,7 @@
 	.pic {
 		max-width: 300px;
 		margin: 30px auto;
-		background: var(--darkRed);
+		background: var(--darkBlue);
 		padding: 0.5em;
 		display: flex;
 	}
@@ -233,11 +234,11 @@
 	}
 	.icons {
 		max-width: 50px;
-		color: var(--pink);
+		color: var(--green);
 	}
 	a:hover {
-		color: var(--pink);
-		border-bottom: 2px solid var(--red);
+		color: var(--green);
+		border-bottom: 2px solid var(--green);
 		cursor: pointer;
 	}
 </style>

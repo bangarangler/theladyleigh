@@ -9,23 +9,26 @@
 	--black: #1a1a1d;
 	--gray: #4e4e50;
 	--white: #ffffff;
+	--darkBlue: #00062f;
+	--green: #4aed05;
+	--blue: #3c4998;
 
 	/* COLORS INTENTIONS */
-	--primary: var(--pink);
+	--primary: var(--green);
 	--danger: var(--darkRed);
 	--background: var(--black);
 	--textColor: var(--white);
 	--reverseTextColor: var(--black);
-	--lineColor: var(--red);
+	--lineColor: var(--darkBlue);
 	--cardBG: var(--gray);
 	--headerBG: var(--black);
 	--headerLinkText: var(--white);
 	--btnTextColor: var(--gray);
-	--btnBGColor: var(--pink);
+	--btnBGColor: var(--blue);
 	--footerBG: var(--black);
 	--headerLinkOpacity: var(--gray);
-	--headerBorder: var(--red);
-	--inputBorder: var(--pink);
+	--headerBorder: var(--green);
+	--inputBorder: var(--green);
 
 	/* STYLES */
 	--line: 1px solid var(--lineColor);

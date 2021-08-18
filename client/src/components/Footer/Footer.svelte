@@ -67,29 +67,30 @@
 		padding: 1.2rem;
 		font-family: var(--slantText);
 		border: 6px solid;
-		background: -webkit-gradient(linear, right top, left bottom, from(var(--red)), to(var(--pink)));
-		background: linear-gradient(to bottom left, var(--red), var(--pink));
-		background-clip: border-box;
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		-webkit-border-image: -webkit-gradient(
-				linear,
-				right top,
-				left bottom,
-				from(var(--red)),
-				to(var(--pink))
-			)
-			1;
-		-webkit-border-image: linear-gradient(to bottom left, var(--red), var(--pink)) 1;
-		border-image: -webkit-gradient(
-				linear,
-				right top,
-				left bottom,
-				from(var(--darkRed)),
-				to(var(--pink))
-			)
-			1;
-		border-image: linear-gradient(to bottom left, var(--red), var(--pink)) 1;
+		color: var(--green);
+		/* background: -webkit-gradient(linear, right top, left bottom, from(var(--red)), to(var(--pink))); */
+		/* background: linear-gradient(to bottom left, var(--red), var(--pink)); */
+		/* background-clip: border-box; */
+		/* -webkit-background-clip: text; */
+		/* -webkit-text-fill-color: transparent; */
+		/* -webkit-border-image: -webkit-gradient( */
+		/* 		linear, */
+		/* 		right top, */
+		/* 		left bottom, */
+		/* 		from(var(--red)), */
+		/* 		to(var(--pink)) */
+		/* 	) */
+		/* 	1; */
+		/* -webkit-border-image: linear-gradient(to bottom left, var(--red), var(--pink)) 1; */
+		/* border-image: -webkit-gradient( */
+		/* 		linear, */
+		/* 		right top, */
+		/* 		left bottom, */
+		/* 		from(var(--darkRed)), */
+		/* 		to(var(--pink)) */
+		/* 	) */
+		/* 	1; */
+		/* border-image: linear-gradient(to bottom left, var(--red), var(--pink)) 1; */
 		text-align: center;
 		max-width: 290px;
 		margin: 20px auto;
