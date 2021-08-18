@@ -196,7 +196,7 @@
 		grid-area: 'copy';
 	}
 	.copy p {
-		color: var(--pink);
+		color: var(--green);
 		font-size: var(--h6);
 	}
 	@media (min-width: 800px) {
